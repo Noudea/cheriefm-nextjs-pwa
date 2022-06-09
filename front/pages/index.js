@@ -4,8 +4,7 @@ import Player from '../components/player/Player'
 export default function Home () {
   return (
     <>
-      <AppBar></AppBar>
-      <Player></Player>
+      <p>test</p>
     </>
   )
 }
