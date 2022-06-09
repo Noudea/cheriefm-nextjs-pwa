@@ -114,3 +114,13 @@
     flex-direction: column;
   }
 }
+
+.songContainer {
+  margin: 20px;
+  display: inline-flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-between;
+}
