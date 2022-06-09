@@ -13,7 +13,6 @@ import zikmu from '../public/export/Zikmu.png'
 export default function Home () {
   return (
     <>
-      <AppBar></AppBar>
       <div className={styles.songContainer}>
         <AudioCard song='Test' artist='Test' img={imgFirst}></AudioCard>
         <AudioCard song='Test' artist='Test' img={imgSecond}></AudioCard>
@@ -24,7 +23,6 @@ export default function Home () {
         <VoirPlus></VoirPlus>
       </div>
       <AnnonceCategorie title='Test' icon={zikmu}></AnnonceCategorie>
-      <Player></Player>
     </>
   )
 }
