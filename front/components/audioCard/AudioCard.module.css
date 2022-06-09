@@ -1,0 +1,29 @@
+.audioCardContainer {
+  position: relative;
+}
+
+.audioCardImage {
+  background: linear-gradient(180deg, white, black);
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.audioCardInfo {
+  text-align: center;
+  position: absolute;
+}
+
+.song {
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+}
+
+.artist {
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  color: #FFA1A1;
+}
