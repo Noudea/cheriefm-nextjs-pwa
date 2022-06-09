@@ -77,8 +77,9 @@
 
 // export default getCheriefm
 
-// export const config = {
-//   api: {
-//     externalResolver: true
-//   }
-// }
+export const config = {
+  api: {
+    externalResolver: true
+  }
+}
+*/

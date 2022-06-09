@@ -4,7 +4,6 @@ function Layout ({children}) {
     return (
         <main>
             {children}
-            <AppBar></AppBar>
         </main>
     )
 }
