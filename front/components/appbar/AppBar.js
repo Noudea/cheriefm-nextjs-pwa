@@ -31,12 +31,13 @@ function AppBar() {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items:center;
+        align-items: center;
       }
 
       .research {
         background-color: white;
         border: none;
+        margin-right: 10px;
       }
 
       .profile {
