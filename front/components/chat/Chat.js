@@ -1,4 +1,4 @@
-/* import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import socketClient from 'socket.io-client'
 import Message from './message/Message'
 import { generateUsername } from "unique-username-generator";
@@ -11,21 +11,18 @@ const SOCKET_ENDPOINT = 'http://localhost:4000'
 const socket = socketClient(SOCKET_ENDPOINT)
 
 function Chat () {
-<<<<<<< HEAD
-  return (
-    <div className='chat-app' />
-=======
 
-  // const [chat,setChat] = useState({
-  //   messages : []
-  // })
+  const [chat,setChat] = useState({
+    messages : []
+  })
 
   const [messages, setMessages] = useState([]);
 
-  const [username,setUsername] = useState()
+  const [username,setUsername] = useState(generateUsername())
+
+  const [inputMessage,setInputMessage] = useState('');
   
   useEffect(() => {
-    setUsername(generateUsername)
     configureSocket()
     console.log('i fire once');
     
@@ -52,7 +49,7 @@ function Chat () {
     console.log('sending the message')
     socket.emit('send-message', {
       text,
-      senderName: username,
+      username: username,
       id: Date.now()
     })
   }
@@ -60,20 +57,28 @@ function Chat () {
 
   return (
       <div className={`${styles.chatApp}`}>
-          <button onClick={() => {
-            handleSendMessage('test')
-          }}>send</button>
-          <div>
+          <div className={styles.chatListContainer}>
             {
               messages.map((message) => (
-                <p key={message.id}>{message.text}</p>
+                <Message key={message.id} username={message.username} text={message.text} ownership={message.username == username}></Message>
               ))
             }
           </div>
+          <div className={styles.sendMessageContainer}>
+            <input className={styles.sendMessageInput} onChange={(e) => {
+              setInputMessage(e.target.value)
+            }} value={inputMessage}></input>
+            <div onClick={() => {
+              if(inputMessage) {
+                handleSendMessage(inputMessage)
+                setInputMessage('')
+              }
+            } } className={styles.sendButton}>
+            </div>
+          </div>
       </div>
->>>>>>> 089eb3579a400bbfd1cfc982340ef80a013ec5ec
   )
 }
 
 export default Chat
-*/
+

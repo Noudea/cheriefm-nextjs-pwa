@@ -6,6 +6,7 @@ function AudioCard({ song, artist, img }) {
   return(
     <div className={styles.audioCardContainer}>
       <Image className={styles.audioCardImage} src={img} height={156} width={156}></Image>
+      <div className={styles.gradient}></div>
       <div className={styles.audioCardInfo}>
         <p className={styles.song}>
           {song}

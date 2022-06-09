@@ -12,17 +12,30 @@ import zikmu from '../public/export/Zikmu.png'
 
 export default function Home () {
   return (
-    <>
+    <div className={styles.homeContainer}>
+      <AnnonceCategorie title='En ce moment' icon={zikmu}></AnnonceCategorie>
       <div className={styles.songContainer}>
-        <AudioCard song='Test' artist='Test' img={imgFirst}></AudioCard>
-        <AudioCard song='Test' artist='Test' img={imgSecond}></AudioCard>
-        <AudioCard song='Test' artist='Test' img={imgThird}></AudioCard>
-        <AudioCard song='Test' artist='Test' img={imgFourth}></AudioCard> 
+        <AudioCard song='Coeur brisé' artist='Yanns' img={imgFirst}></AudioCard>
+        <AudioCard song='Bambino' artist='Yanns' img={imgSecond}></AudioCard>
+        <AudioCard song='Clic Clic Pan Pan' artist='Yanns' img={imgThird}></AudioCard>
+        <AudioCard song='Ma Gadji' artist='Yanns' img={imgFourth}></AudioCard>
       </div>
       <div className={styles.voirPlusSongs}>
         <VoirPlus></VoirPlus>
       </div>
-      <AnnonceCategorie title='Test' icon={zikmu}></AnnonceCategorie>
-    </>
+      <AnnonceCategorie title='Podcasts' icon='/icons/podcasts.png'></AnnonceCategorie>
+      <div className={styles.songContainer}>
+        <AudioCard song='Women in the world #1' artist='Priya Singh' img='/covers/podcast1.png'></AudioCard>
+        <AudioCard song='Women in the world #2' artist='Marion Séclin' img='/covers/podcast2.png'></AudioCard>
+        <AudioCard song='Lorem Ipsum' artist='Lorem Ipsum' img='/covers/podcast3.png'></AudioCard>
+        <AudioCard song='Dolor Amet' artist='Lorem Ipsum' img='/covers/podcast3.png'></AudioCard>
+      </div>
+      <div className={styles.voirPlusSongs}>
+        <VoirPlus></VoirPlus>
+      </div>
+      <div className={styles.playerContainer}>
+        <Player></Player>
+      </div>
+    </div>
   )
 }

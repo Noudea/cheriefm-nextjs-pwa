@@ -5,14 +5,14 @@ function PlayPauseButton({radio,onClick}) {
     <div onClick={onClick}>
       {!radio ? 
         <Image 
-          width={16}
-          height={22}
+          width={18}
+          height={24}
           src='/icons/play.png'
         />
       : 
         <Image 
           width={16}
-          height={22}
+          height={24}
           src='/icons/pause.png'
         />
       }

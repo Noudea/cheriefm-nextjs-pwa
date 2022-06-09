@@ -2,20 +2,26 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  margin: 20px;
+  padding:0px 36px;
 }
 
 .titleCategory {
   color: black;
   font-size: 25px;
   font-family: Lato, sans-serif;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .separatedBar {
   background-color :#FF003C;
   height: 5px;
-  width: 50px;
+  width: 64px;
   border-radius: 15px;
+  margin:0px 20px;
+}
+
+.iconContainer {
+  position: relative;
+  width:35px;
+  height:35px;
 }

@@ -5,11 +5,15 @@ import styles from './Layout.module.css'
 function Layout ({children}) {
     return (
         <main className={styles.layoutContainer}>
-            <AppBar></AppBar>
+            <div className={styles.appBarContainer}>
+                <AppBar></AppBar>
+            </div>
             <div className={styles.pageContainer}>
                 {children}
             </div>
-            <NavBar></NavBar>
+            <div className={styles.navBarContainer}>
+                <NavBar></NavBar>
+            </div>
         </main>
     )
 }

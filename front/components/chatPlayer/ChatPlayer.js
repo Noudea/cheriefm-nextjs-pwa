@@ -1,10 +1,10 @@
 import {useEffect, useState} from 'react'
-import styles from './Player.module.css'
+import styles from './ChatPlayer.module.css'
 import Image from 'next/image'
-import PlayPauseButton from './playPauseButton/PlayPauseButton'
+import PlayPauseButton from '../player/playPauseButton/PlayPauseButton'
 
 
-function Player () {
+function ChatPlayer () {
   const FLUX_CHERIEFM = 'https://scdn.nrjaudio.fm/fr/30201/mp3_128.mp3?origine=fluxradios&cdn_path=adswizz_lbs11&access_token=00a1ff392ac74fdab1b0f411362b99f9'
 
   const [radio,setRadio] = useState(false)
@@ -57,4 +57,4 @@ function Player () {
   )
 }
 
-export default Player
+export default ChatPlayer

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './NavBar.module.css'
+import Link from 'next/link'
 
 function NavBar() {
   return(
@@ -25,11 +26,15 @@ function NavBar() {
         <p>Radios</p>
       </div>
       <div className={styles.homeButton}>
-        <Image
-          width={65}
-          height={65}
-          src='/icons/unknown.png'
-        />
+        <Link href='/'>
+          <a>
+            <Image
+              width={65}
+              height={65}
+              src='/icons/unknown.png'
+            />
+          </a>
+        </Link>
       </div>
       <div className={styles.iconContainer}>
         <div className={styles.imgContainer}>
@@ -42,14 +47,19 @@ function NavBar() {
         <p>Collection</p>
       </div>
       <div className={styles.iconContainer}>
-        <div className={styles.imgContainer}>
-          <Image
-            layout='fill'
-            objectFit='contain'
-            src='/icons/chat.png'
-          />
-        </div>
-        <p>Chat</p>
+        <Link href='/chat'>
+          <a>
+            <div className={styles.imgContainer}>
+              <Image
+                layout='fill'
+                objectFit='contain'
+                src='/icons/chat.png'
+              />
+            </div>
+            <p>Chat</p>
+          </a>
+        
+        </Link>
       </div>
     </div>
   )
