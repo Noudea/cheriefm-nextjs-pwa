@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer')
+/*const puppeteer = require('puppeteer')
 const cheerio = require('cheerio')
 const chrome = require('chrome-aws-lambda')
 
@@ -82,3 +82,4 @@ export const config = {
     externalResolver: true
   }
 }
+*/
