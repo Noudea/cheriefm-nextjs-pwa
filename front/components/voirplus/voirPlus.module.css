@@ -1,0 +1,13 @@
+.btnVoirPlus {
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  width: 115px;
+  height: 36px;
+  color: white;
+  background: linear-gradient(90deg, #FF0000, #FF0076);
+  box-shadow: 0px 4px 11px #F3017229;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}

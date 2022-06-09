@@ -1,0 +1,21 @@
+.categoryContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.titleCategory {
+  color: black;
+  font-size: 25px;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+}
+
+.separatedBar {
+  background-color :#FF003C;
+  height: 5px;
+  width: 50px;
+  border-radius: 15px;
+}

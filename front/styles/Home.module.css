@@ -124,3 +124,7 @@
   justify-content: space-evenly;
   align-content: space-between;
 }
+
+.voirPlusSongs {
+  text-align:center;
+}

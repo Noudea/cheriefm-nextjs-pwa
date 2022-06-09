@@ -3,7 +3,7 @@
 }
 
 .audioCardImage {
-  background: linear-gradient(180deg, white black);
+  background: linear-gradient(180deg, white, black);
   border-radius: 15px;
   position: absolute;
   top: 0;
@@ -19,7 +19,7 @@
   font-family: Lato, sans-serif;
   font-weight: bold;
   font-size: 22px;
-  color: #FFFFFF;
+  color: white;
 }
 
 .artist {
