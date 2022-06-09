@@ -1,12 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Chat from '../components/chat/Chat'
-import styles from '../styles/Home.module.css'
+import Player from '../components/player/Player'
 
-export default function Home() {
+export default function Home () {
   return (
     <div>
-      <Chat></Chat>
+      <Player />
     </div>
   )
 }
