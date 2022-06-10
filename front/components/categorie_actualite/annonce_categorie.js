@@ -2,16 +2,16 @@ import styles from './categorie.module.css'
 import Image from 'next/image'
 
 function AnnonceCategorie ({ title, icon }) {
-  
   return (
     <div className={styles.categoryContainer}>
       <p className={styles.titleCategory}> {title} </p>
-      <span className={styles.separatedBar}></span>
+      <span className={styles.separatedBar} />
       <div className={styles.iconContainer}>
-        <Image src={icon}
+        <Image
+          src={icon}
           layout='fill'
           objectFit='contain'
-        ></Image>
+        />
       </div>
     </div>
   )

@@ -1,3 +1,7 @@
+html, body {
+  background-image: url('../public/accueil_2.png');
+}
+
 html,
 body,
 #__next,
