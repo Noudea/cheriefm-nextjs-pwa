@@ -26,8 +26,8 @@ export default function Home () {
       </div>
       <AnnonceCategorie title='Podcasts' icon='/icons/podcasts.png' />
       <div className={styles.songContainer}>
-        <AudioCard song='Women in the world #1' artist='Priya Singh' img='/covers/podcast1.png' />
-        <AudioCard song='Women in the world #2' artist='Marion Séclin' img='/covers/podcast2.png' />
+        <AudioCard song='Who run the world #1' artist='Priya Singh' img='/covers/podcast1.png' />
+        <AudioCard song='Who run the world #2' artist='Marion Séclin' img='/covers/podcast2.png' />
         <AudioCard song='Lorem Ipsum' artist='Lorem Ipsum' img='/covers/podcast3.png' />
         <AudioCard song='Dolor Amet' artist='Lorem Ipsum' img='/covers/podcast3.png' />
       </div>
