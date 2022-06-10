@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import socketClient from 'socket.io-client'
 import Message from './message/Message'
 import { generateUsername } from "unique-username-generator";
-
+import Image from 'next/image'
 import styles from './Chat.module.css'
 
 
@@ -74,6 +74,11 @@ function Chat () {
                 setInputMessage('')
               }
             } } className={styles.sendButton}>
+              <Image
+                src='/icons/send.png'
+                height={40}
+                width={40}
+              />
             </div>
           </div>
       </div>

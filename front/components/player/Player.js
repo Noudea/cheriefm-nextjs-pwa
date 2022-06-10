@@ -42,8 +42,8 @@ function Player () {
         />
       </div>
       <div className={styles.infosContainer}>
-        <p className={styles.artiste}>Yanns</p>
-        <p className={styles.title}>Clic Clic Pan Pan</p>
+        <p className={styles.artiste}>Marion Séclin</p>
+        <p className={styles.title}>Woman in the world #2</p>
       </div>
       <div className={styles.buttonContainer}>
         <Image
