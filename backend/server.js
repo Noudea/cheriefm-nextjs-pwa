@@ -15,7 +15,7 @@ app.use(express.static('public'))
 const server = require('http').Server(app)
 const io = require('socket.io')(server, {
   cors: {
-    origin: 'http://46.101.243.112:3000/'
+    origin: '*'
   }
 })
 
