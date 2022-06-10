@@ -26,4 +26,7 @@
 .pageContainer {
   flex:1;
   padding:97px 0px 87px 0px;
+  background-image: url('/accueil_2.png');
+  object-fit:cover;
+  background-attachment: fixed;
 }

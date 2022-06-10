@@ -1,0 +1,6 @@
+.podcastScreenContainer {
+  height:100%;
+  background-image: url('/podcast.png');
+  object-fit:cover;
+  background-repeat: no-repeat;
+}

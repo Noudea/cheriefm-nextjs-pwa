@@ -6,6 +6,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        background-color: #fff6f6;
         
       }
 
@@ -17,7 +18,7 @@
         border: none;
       }
       .imageicon button {
-        background-color: white;
+        background-color: #fff6f6;
       }
 
       .profilSearch {
@@ -28,7 +29,7 @@
       }
 
       .research {
-        background-color: white;
+        background-color:#fff6f6;
         border: none;
         margin-right: 15px;
       }
@@ -36,7 +37,7 @@
       .profile {
         border: solid 2px #ffa1a1;
         border-radius: 50%;
-        background-color: white;
+        background-color:#fff6f6;
         width :45px;
         height:45px;
         display: flex;
