@@ -7,7 +7,7 @@ import styles from './Chat.module.css'
 
 
 // Socket ENDPOINT (notre API)
-const SOCKET_ENDPOINT = 'http://localhost:4000'
+const SOCKET_ENDPOINT = 'http://socketserver:4000'
 const socket = socketClient(SOCKET_ENDPOINT)
 
 function Chat () {
