@@ -39,7 +39,7 @@ function Player () {
       </div>
       <div className={styles.infosContainer}>
         <p className={styles.artiste}>Marion Séclin</p>
-        <p className={styles.title}>Woman in the world #2</p>
+        <p className={styles.title}>Who run the world #2</p>
       </div>
       <div className={styles.buttonContainer}>
         <Image
