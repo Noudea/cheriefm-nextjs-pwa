@@ -21,7 +21,7 @@ services:
     container_name: pwa
     image: bitnami/node:16
     working_dir: /home/cheriefm/front
-    command: sh -c 'yarn install && yarn build && yarn start'
+    command: sh -c 'npm install && npm run build && npm run start'
     environment:
       - NODE_ENV=production
       - NODE_PORT=3000
